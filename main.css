@@ -1,0 +1,110 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    color: darkmagenta;
+}
+
+h2{
+    color: indigo;
+}
+
+button{
+    background: darkviolet;
+    color: ghostwhite;
+    border: none;
+    width: 100px;
+    height: 50px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+button:hover{
+    background: gray;
+    cursor: pointer;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.container{
+    background: radial-gradient(40% 50%, #FAECD5, #CAE4D8);
+    margin: 0 auto;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.left_side img{
+    width: 258px;
+    height: 300px;
+    box-shadow: 0 0 5px 2px;
+}
+
+.left_side{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.education{
+    display: flex;
+    flex-direction: column;
+}
+
+.education a{
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+
+.education a:hover{
+    color: rgb(17, 2, 24);
+}
+
+.right_side{
+    width: 70%;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.table{
+    border:1px solid grey;
+}
+
+.date{
+    font-style: italic;
+}
+
+.comment{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 350px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.comment textarea{
+    width: 350px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+
+.comment:hover::after{
+    content: attr(data-title);
+    position: absolute;
+    left: -20%; top: -10%;
+    z-index: 1;
+    background: rgba(255,255,230,0.9);
+    font-size: 11px;
+    padding: 5px 10px;
+    border: 1px solid #333;
+}
